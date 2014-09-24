@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="index.html">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo('name') ); ?>">
                    <img src="<?php echo get_template_directory_uri(); ?>/tools/images/logo.png" class='img-responsive'/>
                 </a>
             </div>
@@ -57,16 +57,6 @@
                 </ul>
             </div>
         </div>
-          
-              
-
-       <!--  <div class="container main-menu">
-            <div id="header-image">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo('name') ); ?>" rel="home">
-                <img src="<?php echo get_template_directory_uri(); ?>/tools/images/logo.png" class='img-responsive'/>
-             </a>
-           </div>    
-        </div> -->
    
            <?php
                 // $args = array('theme_location' => 'primary');
